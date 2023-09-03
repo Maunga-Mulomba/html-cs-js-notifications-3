@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="notification-icon">
+        <!-- insert icon here -->
+        <i class="fa-regular fa-bell"></i>
+      </div>
+      <div class="banner">
+        <h1>Notifications</h1>
+        <p>Mark all as read</p>
+      </div>
+      <hr />
+      <!-- default message -->
+      <div class="message default">
+        <div class="message__pic pic-1"></div>
+        <div class="message__details">
+          <p>
+            <span>Paul Waga</span> shared the file
+            <span>Android UI Kit</span> with you
+          </p>
+          <p class="message__details--time">an hour ago</p>
+          <div class="message__details--btns">
+            <button id="decline-btn">Decline</button>
+            <button id="accept-btn">Accept</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- accepted message -->
+      <div class="accepted response">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>
+          You have <span>accepted</span> the file 'Android UI kit' shared by
+          <span>Paul</span>. <br />
+          The file has been added to your collection
+        </p>
+      </div>
+
+      <!-- removed message -->
+      <div class="declined response">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <p>
+          You have <span>declined</span> the file 'Android UI kit' shared by <span>Paul</span>. <br />The
+          file has <span>not</span> been added to your collection
+        </p>
+      </div>
+
+      <hr />
+      <div class="message">
+        <div class="message__pic pic-2"></div>
+        <div class="message__details">
+          <p>
+            <span>Denise Selover</span> made you an editor in the team<span>
+              Power</span
+            >
+          </p>
+          <p class="message__details--time">Yesterday</p>
+        </div>
+      </div>
+
+      <div class="back-btn">
+        <button id="go-back-btn">Go back</button>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>

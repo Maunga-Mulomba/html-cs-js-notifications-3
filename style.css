@@ -1,0 +1,191 @@
+:root {
+  --primary: #161544;
+  --secondary: #8989a1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fafaff;
+}
+
+.container {
+  background-color: white;
+  box-shadow: 0 4px 7px 0 #eaeaf5;
+  padding: 2rem;
+  border-radius: 6px;
+  position: relative;
+  color: var(--primary);
+}
+
+/* notification */
+
+.notification-icon {
+  background-color: var(--primary);
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  width: fit-content;
+  color: white;
+  position: absolute;
+  top: -45px;
+  right: 0;
+}
+
+.notification-icon i {
+  font-size: 19px;
+}
+
+/* banner */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.banner h1 {
+  font-size: 1.1rem;
+  font-family: "Montserrat";
+}
+
+.banner p {
+  font-size: 0.8rem;
+  color: #707ce5;
+  background-color: #f2f3ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+
+/* divider */
+hr {
+  height: 2px;
+  background-color: rgb(227, 227, 227);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+/* message */
+.message {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 1.5rem;
+}
+
+.message__pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.pic-1 {
+  background-image: url("https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+.pic-2 {
+  background-image: url("https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-position: center;
+}
+
+.message__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  width: 90%;
+}
+
+.message__details span {
+  font-weight: 600;
+}
+
+.message__details--time {
+  color: var(--secondary);
+}
+
+.message__details--btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.message__details--btns button {
+  width: 6rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#decline-btn {
+  border: 1.5px solid var(--primary);
+  background-color: transparent;
+  color: #161544;
+}
+
+#decline-btn:hover {
+  background-color: rgb(211, 8, 8);
+  border: 1.5px solid transparent;
+  color: white;
+}
+
+#accept-btn {
+  border: none;
+  background-color: var(--primary);
+  color: white;
+}
+
+#accept-btn:hover {
+  background-color: rgb(10, 199, 10);
+  color: white;
+}
+
+#go-back-btn {
+  border: 1.5px solid black;
+  padding: 0.2rem 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#go-back-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* JS Styles */
+.response {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  display: none;
+}
+
+.response i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.response p {
+  line-height: 25px;
+}
+.response span {
+  font-weight: 500;
+}
+
+.accepted i {
+  color: rgb(10, 199, 10);
+}
+
+.declined i {
+  color: rgb(211, 8, 8);
+}
